@@ -6,7 +6,7 @@
 #ifndef SLANGA_PROJECTILE_H_
 #define SLANGA_PROJECTILE_H_
 
-namespace slagna {
+namespace slanga {
 
 class Projectile {
 
@@ -17,6 +17,9 @@ class Projectile {
 
     // Calculates potential energy (in J) of projectile at given height (in m)
     double calculatePotentialEnergy(double height, double gravity = -9.8);
+
+	// Calculates mometum of projectile (in J) of projectile at given velocity (in m/s)
+	double Projectile::calcualteMomentum(double speed);
 
 	// Gets mass value of projectile
 	double getMass();
