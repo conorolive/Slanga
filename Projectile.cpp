@@ -5,7 +5,7 @@
 
 #include "Projectile.h"
 
-namespace slagna {
+namespace slanga {
 
   Projectile::Projectile(double mass)
   {
@@ -16,6 +16,12 @@ namespace slagna {
   {
     return height * gravity * mass;
   }
+
+  double Projectile::calcualteMomentum(double speed)
+  {
+	  return speed * mass;
+  }
+
 
   double Projectile::getMass()
   {
